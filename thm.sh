@@ -104,7 +104,7 @@ while [[ $# -gt 0 ]]; do
     case "$1" in
      -x|--koth) mode="koth"; connect; shift ;;
      -b|--lab) mode="lab"; connect; shift ;;
-     -i|--ip) vmip="$2"; updateProfile; shift 2;;
+     -i|--ip) vmip="$2"; updateProfile; shift 2 ;;
      -k|--kill) disconnect ;;
      -l|--log) getLog; exit 0 ;;
      -h|--help) usage; exit 0 ;;
